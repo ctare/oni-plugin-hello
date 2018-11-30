@@ -1,10 +1,11 @@
 {
-  "name": "oni-plugin-starter-kit",
+  "name": "oni-plugin-hello",
   "version": "0.0.1",
   "description": "Template for an oni plugin",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build tsconfig.json"
   },
   "engines": {
     "oni": "^0.3.5"
@@ -24,7 +25,9 @@
     "@types/react": "^16.3.13",
     "oni-api": "^0.0.42",
     "oni-types": "^0.0.4",
-    "react": "^16.3.2"
+    "react": "^16.3.2",
+    "rxjs-compat": "^6.3.3",
+    "typescript": "^3.2.1"
   },
   "devDependencies": {
     "rxjs": "^6.1.0",
