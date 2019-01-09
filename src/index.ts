@@ -10,7 +10,7 @@ export const activate = (oni: Oni.Plugin.Api): void => {
     
 
     // We'll create a simple status bar item
-    alert("hello world")
+    // alert("hello world")
 
     oni.commands.registerCommand(new Command(
         "sample.hello",
@@ -20,6 +20,9 @@ export const activate = (oni: Oni.Plugin.Api): void => {
             alert("hello!!!!!")
         }
     ))
+
+    oni.editors.activeEditor.onBufferChanged.subscribe((e) => {
+    })
 }
 
 class Command implements Oni.Commands.ICommand {
